@@ -10,6 +10,7 @@ from rest_framework.response import Response
 from characters.models import Character
 from characters.serializers import CharacterSerializer
 
+
 @extend_schema(
     responses={status.HTTP_200_OK: CharacterSerializer},
 )
